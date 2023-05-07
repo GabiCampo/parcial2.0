@@ -16,44 +16,13 @@
   <link rel="icon" href="img/icon.png">
 </head>
 <body>
-  <div class="card text-center">
-    <div class="card-header ">  
-      <ul class="nav nav-pills card-header-pills ms-auto">
-          <div class="logo">
-              <img src="img/icon.png" alt="">
-          </div> 
-          <li class="nav-item">
-          <a class="nav-link" href="inicio.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-          </li>    
-          
-          <li class="nav-item ini ">
-              <a class="nav-link b" href="inicio_sesion.html">Iniciar sesion</a>
-          </li>  
-          <li class="nav-item ini">
-              <a class="nav-link a" href="Registro.html">Registro</a>
-          </li> 
-          <li class="nav-item ini">
-              <a class="nav-link a" href="administrar.html">Administrar</a>
-          </li> 
-          <li class="nav-item ini">
-              <a class="nav-link a" href="mis_compras.html">Mis compras</a>
-          </li> 
-          <li class="nav-item ini">
-              <a class="nav-link a" href="misdatos.html">Mis datos</a>
-          </li>
-          <li class="nav-item ini">
-              <a class="nav-link a" href="concurso_ropa.html">Concurso</a>
-          </li>
-      </ul>
-
+  <script src="js/nav.js"></script>
+    <div class="card text-center" >
+        
+      <div class="card-header" id="targett-div"></div> 
+            
     </div> 
-  </div>
+    <!-- <div class="card-body-card "> -->
  <!--aqui el listado  -->
  <div class="carda">
     <!-- <div class="card-header"> listado</div> -->
@@ -68,7 +37,7 @@
             <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nombre">
           </div>
         </form> -->
-        <form action="" class="formulario" method="post">
+        <form action="" class="formulario" method="post" id="formulario">
           <div class="user-details">
             <div class="input-box">
               <!-- <span class="details">Nombre</span> -->
@@ -89,34 +58,34 @@
             <div class="input-box">
               <!-- <span class="details">Categoria</span> -->
               <label for="" class=" details form-label">Nombre</label>
-              <input type="text" placeholder="Seleccione una categoria" required>
+              <input type="text" placeholder="Seleccione una categoria" required id="nombre">
             </div>
             <div class="input-box">
               <!-- <span class="details">Cantidad</span> -->
               <label for="" class=" details form-label">Monto</label>
-              <input type="text" placeholder="Ingrese una cantidad" required>
+              <input type="text" placeholder="Ingrese una cantidad" required id="monto">
             </div>
             <div class="input-box">
               <!-- <span class="details">Imagen</span> -->
               <label for="" class=" details form-label">Descripcion</label>
-              <input type="text" placeholder="Seleccione una imagen" required>
+              <input type="text" placeholder="Seleccione una imagen" required id="descripcion">
             </div>
             <div class="input-box">
               <!-- <span class="details">Nombre</span> -->
               <label for="" class="details form-label">Descuento subscriptor</label>
-              <input type="text" placeholder="Ingrese un nombre" required>
+              <input type="text" placeholder="Ingrese un nombre" required id="dessub">
             </div>
             <div class="input-box">
               <!-- <span class="details">Nombre</span> -->
               <label for="" class="details form-label">Descuento oferta</label>
-              <input type="text" placeholder="Ingrese un nombre" required>
+              <input type="text" placeholder="Ingrese un nombre" required id="desoferta">
             </div>
             <!-- aqui va el boton de si va a estar subcrito -->
             
             <div class="input-boxx">
               <!-- <span class="details">Imagen</span> -->
               <label for="" class=" details form-label"></label>
-              <input type="file" placeholder="" required>
+              <input id="imagen" type="file" placeholder="" required>
             </div>
             
           </div>
@@ -124,12 +93,12 @@
           <br>
           <div class="detalle">
           <div class="button">
-          <input type="submit" class="submitBtn" value="Guardar">
+          <input type="submit" class="submitBtn" value="Guardar" id="guardar">
         </div>
         <div class="button">
           <input type="submit" class="submitBtn" value="Eliminar">
         </div>
-        <!-- bton del pico sacar -->
+        
         <div class="button">
           <input type="submit" class="submitBtn" value=" Nuevo">
         </div>
@@ -199,29 +168,19 @@
         </table>
     </div>
  </div>
-
+<!-- </div>  -->
  
  <!-- hasta aqui el listado -->
  <!-- y empieza el footer -->
- <footer>
-    <div class="footer-content">
-        <h3> Patitas</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-        <p> contacto:  (+56) 44220 1098</p>
-        <ul class="socials">
-            <li><a href=""><img src="img/facebook_logo.png" class="fa fa-facebook"></a></li>
-            <li><a href=""><img src="img/twitter_logo.png" class="fa fa-twitter"></a></li>
-            <li><a href=""><img src="img/google_plus_logo.png" class="fa fa-google-plus"></a></li>
-            <li><a href=""><img src="img/instagram_logo.png" class="fa fa-instagram"></a></li>
-            <li><a href=""><img src="img/whatsapp_logo.png" class="fa fa-wsp"></a></li>
-        </ul>
-    </div>
-    <div class="footer-bottom">
-        <p>copyright &copy;2023 Patitas. Diseñado por Marcianeke </p>
+ <div class="target-div" id="target-div">
+</div>
 
-    </div>
-</footer>
-<script src="js/carrito.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<!-- <script src="js/carrito.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="js/tradcucciones.js"></script>
+<script src="js/form_productos.js"></script>
+<script src="js/footer.js"></script>
 
 <!-- aqui termina el footer -->
 </body>
