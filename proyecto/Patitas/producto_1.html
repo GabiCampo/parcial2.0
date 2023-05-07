@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas</title>
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/gerolamo.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="icon" href="img/icon.png">
+
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  <!-- desde aqui -->
+  <div class="card text-center">
+    <div class="card-header ">
+        
+    <ul class="nav nav-pills card-header-pills ms-auto">
+        <div class="logo">
+            <img src="img/icon.png" alt="">
+        </div> 
+        <li class="nav-item">
+          <a class="nav-link" href="inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>    
+          
+          <li class="nav-item ini ">
+              <a class="nav-link b" href="inicio_sesion.html">Iniciar sesion</a>
+          </li>  
+          <li class="nav-item ini">
+              <a class="nav-link a" href="Registro.html">Registro</a>
+          </li> 
+          <li class="nav-item ini">
+              <a class="nav-link a" href="administrar.html">Administrar</a>
+          </li> 
+          <li class="nav-item ini">
+              <a class="nav-link a" href="mis_compras.html">Mis compras</a>
+          </li> 
+          <li class="nav-item ini">
+              <a class="nav-link a" href="misdatos.html">Mis datos</a>
+          </li>
+          <li class="nav-item ini">
+              <a class="nav-link a" href="concurso_ropa.html">Concurso</a>
+          </li>
+    </ul>
+ </div> 
+  </div>
+ <!-- Carrito -->
+ 
+
+ <div class="media">
+    <img class="img " src="img/pro plan.jpg" alt="Generic placeholder image">
+    <div class="media-body">
+      <h4>Pro Plan Optistart Kitten Sabor Pollo Y Arroz 3kg</h4>
+      <h6>Pro Plan Kitten Optistart es una comida para gatitos de hasta doce meses de edad. Elaborado con carne</h6>
+      <h6>fresca de pollo y formulada especialmente con una mezcla innovadora de nutrientes, como el calostro rico</h6>
+      <h6>en anticuerpos naturales. Esta fórmula está indicada también para la nutrición de las madres en periodo</h6>
+      <h6>gestante y lactante.</h6>
+      <p class="price">Precio: $11.500</p>
+      <button class="agregar-carrito" data-id="1" data-nombre="Pro Plan Optistart Kitten Sabor Pollo Y Arroz 3kg" data-precio="11.500">Agregar al carrito</button>
+    </div>
+ </div>
+ 
+ <section id="carrito">
+    <h2>Carrito de compras</h2>
+    <ul id="lista-carrito">
+    </ul>
+
+    <p>Total: $<span id="total"></span></p>
+
+    <button id="vaciar-carrito">Vaciar carrito</button>
+    <a href="carrito.html" class="btn btn-primary" role="button">Ver Carrito</a>
+  </section>
+
+ 
+  <div id="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Beneficios
+            </a>
+          </h5>
+        </div>
+    
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-body">
+              <li>
+                  Tecnología Optistart, contiene anticuerpos naturales del calostro y otras proteínas de calidad, vitaminas y antioxidantes que ayudan a desarrollar y fortalecer el sistema inmunológico inmaduro de tu gatito y a extender la protección durante su primer año formativo de vida.
+              </li>
+              <li>
+                  Encontrado naturalmente en la leche materna, el DHA estimula el desarrollo del cerebro y la retina de los gatitos. La Vitamina A y la Taurina también aportan a un desarrollo óptimo de la visión.
+              </li>
+              <li>
+                  Formulado con calostro, contiene prebióticos y anticuerpos naturales que promueven un sistema digestivo estable, para que el cachorro pueda absorber una mayor cantidad de nutrientes.
+              </li>
+              <li>
+                  La inclusión de minerales quelados ayuda a asegurar una óptima disponibilidad y absorción de nutrientes clave para el crecimiento saludable.
+              </li>
+                         
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Ingredientes
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-body">
+              Pollo, gluten de maíz, harina de subproductos de pollo, arroz de cervecería, grasa animal preservada con tocoferoles mezclados (fuente de vitamina E), maíz amarillo molido, gluten de trigo, harina de pescado, digesto animal (hidrolizado de hígado de pollo y/o pavo, cerdo), cloruro de potasio, aceite de pescado, ácido fosfórico, cloruro de colina, sal, fosfato bicálcico, calostro vacuno (fuente natural de anticuerpos), levadura seca de cervecería (Saccharomyces cerevisae ssp.), taurina, DL-metionina, L-lisina, sulfato de zinc, proteinato de zinc, sulfato ferroso, suplementos vitamínicos (A, D-3, E, B-12), ácido ascórbico (fuente de vitamina C), suplemento de riboflavina, niacina, pantotenato de calcio, sulfato de manganeso, proteinato de manganeso, biotina, mononitrato de tiamina, ácido fólico, sulfato de cobre, proteinato de cobre, clorhidrato de piridoxina, complejo menadiona sódica bisulfito (fuente de actividad de vitamina K), iodato de calcio, selenito de sodio.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingThree">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Recomendacion Sugerida
+                </a>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="card-body">
+                  Cada taza (200 ml) contiene aproximadamente 90 g de PRO PLAN® Cat Kitten con OptiStart®. A partir de la tercera semana, los gatitos pueden comer una ración humedecida con agua. Agregue 1 parte de agua para cada 3 partes de producto y reduzca gradualmente la cantidad de agua hasta que esté comiendo el alimento completamente seco. En caso de que el alimento sea humedecido, desechar la porción no consumida. (1) Cuando los gatitos se hacen adultos, sus necesidades calóricas disminuyen. Ajuste la cantidad de alimento para mantener una condición corporal ideal y evitar el exceso de peso.
+                  El cambio en la alimentación de tu gato debe ser gradual en un periodo de 7 hasta 10 días. Sustituye pequeñas cantidades de alimento cada vez, hasta que tu gato coma únicamente PRO PLAN® Cat Kitten con OptiStart® . Las cantidades diarias recomendadas deberán ser ajustadas a las condiciones ambientales, al nivel de actividad del gato y a su condición física.
+              </div>
+            </div>
+          </div>
+      </div>
+       
+    <table class="content-table">
+      <thead class="thead">
+          <tr class="tr">
+              <th class="th">Edad Mascota</th>
+              <th class="th">Tamaño Mascota</th>
+              <th class="th">Categoria</th>
+              <th class="th">Tipo de Producto</th>
+          </tr>
+      </thead>
+      <tbody class="tbody">
+          <tr>
+              <td class="td">Gatito</td>
+              <td class="td">Tamaño Pequeño</td>
+              <td class="td">Super Premiun</td>
+              <td class="td">Alimento seco</td>
+          </tr>
+      </tbody>
+    </table>
+  
+
+  
+
+<!-- y empieza el footer -->
+<footer>
+    <div class="footer-content">
+        <h3> Patitas</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p> contacto:  (+56) 44220 1098</p>
+        <ul class="socials">
+            <li><a href=""><img src="img/facebook_logo.png" class="fa fa-facebook"></a></li>
+            <li><a href=""><img src="img/twitter_logo.png" class="fa fa-twitter"></a></li>
+            <li><a href=""><img src="img/google_plus_logo.png" class="fa fa-google-plus"></a></li>
+            <li><a href=""><img src="img/instagram_logo.png" class="fa fa-instagram"></a></li>
+            <li><a href=""><img src="img/whatsapp_logo.png" class="fa fa-wsp"></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 Patitas. Diseñado por Marcianeke </p>
+  
+    </div>
+  </footer>
+  
+  <!-- aqui termina el footer -->
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/producto1_pate.js"></script>
+</body>
+</html>

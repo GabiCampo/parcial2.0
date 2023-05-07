@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="css/carrito.css">
+  <link rel="stylesheet" href="css/bodega.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/Carrusel.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="icon" href="img/icon.png">
+</head>
+<body>
+  <div class="card text-center">
+    <div class="card-header ">  
+      <ul class="nav nav-pills card-header-pills ms-auto">
+          <div class="logo">
+              <img src="img/icon.png" alt="">
+          </div> 
+          <li class="nav-item">
+          <a class="nav-link" href="inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>    
+          
+          <li class="nav-item ini ">
+              <a class="nav-link b" href="inicio_sesion.html">Iniciar sesion</a>
+          </li>  
+          <li class="nav-item ini">
+              <a class="nav-link a" href="Registro.html">Registro</a>
+          </li> 
+          <li class="nav-item ini">
+              <a class="nav-link a" href="administrar.html">Administrar</a>
+          </li> 
+          <li class="nav-item ini">
+              <a class="nav-link a" href="mis_compras.html">Mis compras</a>
+          </li> 
+          <li class="nav-item ini">
+              <a class="nav-link a" href="misdatos.html">Mis datos</a>
+          </li>
+          <li class="nav-item ini">
+              <a class="nav-link a" href="concurso_ropa.html">Concurso</a>
+          </li>
+      </ul>
+
+    </div> 
+  </div>
+ <!--aqui el listado  -->
+ <div class="carda">
+    <!-- <div class="card-header"> listado</div> -->
+    <div class="container ">
+        <h4 class="card-title">Bodega</h4>
+        <br>
+        <br>
+        <!-- <form enctype="multipart/form-data" method="post"> -->
+          <!-- {% csrf_token %} -->
+          <!-- <div class="mb-3">
+            <label for="" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nombre">
+          </div>
+        </form> -->
+        <form action="" class="formulario" method="post">
+          <div class="user-details">
+            <div class="input-box">
+              <!-- <span class="details">Nombre</span> -->
+              <label for="" class="details form-label">Categoria</label>
+              <!-- <input type="text" placeholder="Ingrese una categoria" required> -->
+              <select name="lenguajes" id="lang" class="input">
+                <option value="javascript">gato</option>
+                <option value="php">perro</option>
+                <option value="java">Java</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <!-- <span class="details">Categoria</span> -->
+              <label for="" class=" details form-label">Nombre</label>
+              <!-- <input type="text" placeholder="Seleccione una nombre" required> -->
+              <select name="lenguajes" id="lang" class="input">
+                <option value="javascript">JavaScript</option>
+                <option value="php">PHP</option>
+                <option value="java">Java</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <!-- <span class="details">Cantidad</span> -->
+              <label for="" class=" details form-label">Cantidad</label>
+              <input type="number" placeholder="Ingrese una cantidad" required>
+            </div>
+            <div class="input-boxx">
+              <!-- <span class="details">Imagen</span> -->
+              <label for="" class=" details form-label"></label>
+              <input type="file" placeholder="" required>
+            </div>
+          </div>
+          <div class="detalle">
+          <div class="button">
+          <input type="submit" class="submitBtn" value="Guardar">
+        </div>
+        <div class="button">
+          <input type="submit" class="submitBtn" value="Limpiar">
+        </div>
+        <!-- quitar el boton delpico de abajo -->
+        <div class="button">
+          <input type="submit" class="submitBtn" value=" Nuevo">
+        </div>
+      </div>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Categoria</th>
+                    <th>Nombre</th>
+                    
+                    
+                    <th>Estado</th>
+                    <th>Imagen</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Perro</td>
+                    <td>Comida perro</td>
+                    
+                    <td>despachado</td>
+                    <td>Imagen.jpg</td>
+                    <td>
+                      <a name="" id="" class="btn btn-info" href="" role="button">Eliminar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>gato</td>
+                    <td>Comida gato</td>
+                    
+                    <td>entregado</td>
+                    <td>Imagen.jpg</td>
+                    <td>
+                      <a name="" id="" class="btn btn-info" href="" role="button">Eliminar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>perro</td>
+                    <td>Comida perro</td>
+                    
+                    <td>vendido</td>
+                    <td>Imagen.jpg</td>
+                    <td>
+                      <a name="" id="" class="btn btn-info" href="" role="button">Eliminar</a> </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>perro</td>
+                    <td>Comida perro</td>
+                    
+                    <td>anulado</td>
+                    <td>Imagen.jpg</td>
+                    <td>
+                      <a name="" id="" class="btn btn-info" href="" role="button">Eliminar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+ </div>
+
+ 
+ <!-- hasta aqui el listado -->
+ <!-- y empieza el footer -->
+ <footer>
+    <div class="footer-content">
+        <h3> Patitas</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p> contacto:  (+56) 44220 1098</p>
+        <ul class="socials">
+            <li><a href=""><img src="img/facebook_logo.png" class="fa fa-facebook"></a></li>
+            <li><a href=""><img src="img/twitter_logo.png" class="fa fa-twitter"></a></li>
+            <li><a href=""><img src="img/google_plus_logo.png" class="fa fa-google-plus"></a></li>
+            <li><a href=""><img src="img/instagram_logo.png" class="fa fa-instagram"></a></li>
+            <li><a href=""><img src="img/whatsapp_logo.png" class="fa fa-wsp"></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 Patitas. Diseñado por Marcianeke </p>
+
+    </div>
+</footer>
+<script src="js/carrito.js"></script>
+
+<!-- aqui termina el footer -->
+</body>
+</html>
